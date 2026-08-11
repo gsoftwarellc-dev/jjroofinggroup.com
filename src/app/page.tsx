@@ -55,7 +55,7 @@ export default function HomePage() {
       {/* Fills the viewport below the sticky header (6rem bar + 2.25rem lg utility bar). */}
       <section className="relative flex min-h-[calc(100svh-6rem)] items-center overflow-hidden bg-ink-900 lg:min-h-[calc(100svh-8.25rem)]">
         <Image
-          src="/hero-background.jpg"
+          src="/projects/hero_highres_15.jpg"
           alt=""
           fill
           priority
