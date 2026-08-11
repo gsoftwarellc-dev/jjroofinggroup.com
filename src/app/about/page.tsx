@@ -65,10 +65,7 @@ export default function AboutPage() {
               Arizona, giving you the peace of mind that your home is in professional hands.
             </p>
             <dl className="mt-6 space-y-4 border-t border-ink-700 pt-6 text-sm">
-              <div>
-                <dt className="font-semibold text-white">License Number</dt>
-                <dd>{business.license}</dd>
-              </div>
+
               <div>
                 <dt className="font-semibold text-white">Hours</dt>
                 <dd>{business.hours}</dd>

@@ -61,15 +61,7 @@ export default function ContactPage() {
                 </a>
               </Card>
 
-              <Card>
-                <h2 className="text-sm font-bold uppercase tracking-wider text-ink-500">Email</h2>
-                <a
-                  href={`mailto:${business.email}`}
-                  className="mt-2 block text-lg font-semibold text-ink-900 hover:text-brand-600"
-                >
-                  {business.email}
-                </a>
-              </Card>
+
 
               <Card>
                 <h2 className="text-sm font-bold uppercase tracking-wider text-ink-500">Office</h2>
@@ -92,7 +84,6 @@ export default function ContactPage() {
                 <h2 className="text-sm font-bold uppercase tracking-wider text-ink-500">
                   Licensed &amp; Insured
                 </h2>
-                <p className="mt-2 font-semibold text-ink-900">License #{business.license}</p>
                 <p className="mt-2 text-sm text-ink-500">
                   Fully licensed and insured in the state of Arizona.
                 </p>

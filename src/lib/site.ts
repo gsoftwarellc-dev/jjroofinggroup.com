@@ -13,12 +13,11 @@ export const business = {
   tagline: "Reliable Roofing Solutions",
   description:
     "JJ Roofing Group is a roofing company based in Gilbert, serving residential, commercial, and industrial properties throughout Arizona. We provide expert and swift roofing and restoration solutions to get you back to living and making a living quickly.",
-  license: "LIC00253842",
+
   phone: "(480) 534-9027",
   phoneHref: "+14805349027",
   altPhone: "(480) 534-9027",
   altPhoneHref: "+14805349027",
-  email: "sales@jjroofinggroup.com",
   address: {
     street: "1715 W Sunrise Blvd.",
     city: "Gilbert",

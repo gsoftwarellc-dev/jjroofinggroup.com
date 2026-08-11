@@ -72,7 +72,7 @@ export function organizationSchema() {
     description: business.description,
     url: SITE_URL,
     telephone: business.phone,
-    email: business.email,
+
     address: postalAddress,
     geo: {
       "@type": "GeoCoordinates",
@@ -85,7 +85,7 @@ export function organizationSchema() {
     logo: `${SITE_URL}/logo.png`,
     sameAs: [business.social.instagram, business.social.pinterest],
     areaServed: { "@type": "State", name: "Arizona" },
-    hasCredential: `Arizona Contractor License ${business.license}`,
+
     foundingDate: business.founded,
     slogan: business.motto,
   };
@@ -124,7 +124,7 @@ export function localBusinessSchema({
     description,
     url: `${SITE_URL}${path}`,
     telephone: business.phone,
-    email: business.email,
+
     address: postalAddress,
     parentOrganization: { "@id": `${SITE_URL}/#organization` },
     openingHoursSpecification: [openingHours],

@@ -88,7 +88,7 @@ export function CtaBand({
             </a>
           </div>
           <p className="mt-6 text-sm text-brand-100">
-            Licensed &amp; Insured · License #{business.license} · {business.hours}
+            Licensed &amp; Insured · {business.hours}
           </p>
         </div>
       </div>

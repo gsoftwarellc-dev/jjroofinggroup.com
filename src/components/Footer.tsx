@@ -33,8 +33,6 @@ export function Footer() {
             </p>
             <p className="mt-4 text-sm">
               <span className="font-semibold text-white">Licensed &amp; Insured</span>
-              <br />
-              License #{business.license}
             </p>
             <div className="mt-5 flex gap-3">
               <a
@@ -114,11 +112,7 @@ export function Footer() {
                   {business.altPhone}
                 </a>
               </p>
-              <p>
-                <a href={`mailto:${business.email}`} className="hover:text-brand-400 hover:underline">
-                  {business.email}
-                </a>
-              </p>
+
               <p className="text-white">{business.hours}</p>
             </address>
 

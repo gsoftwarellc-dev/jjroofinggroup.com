@@ -51,7 +51,7 @@ function cityFaqs(cityName: string, county: string) {
     },
     {
       q: `Are you licensed and insured to work in ${cityName}?`,
-      a: `Yes. We are fully licensed and insured under Arizona license number ${business.license}, and we pull the proper permits for every jurisdiction we work in. We are locally owned and operated — not an out-of-state storm chasing crew that disappears after the season.`,
+      a: `Yes. We are fully licensed and insured, and we pull the proper permits for every jurisdiction we work in. We are locally owned and operated — not an out-of-state storm chasing crew that disappears after the season.`,
     },
     {
       q: `How fast can you get to a roof leak in ${cityName}?`,
@@ -104,7 +104,7 @@ export default async function CityPage({
           `Free roof inspections throughout ${city.name}`,
           "Class 4 impact-resistant shingle systems",
           "Licensed insurance adjusters on staff",
-          `Licensed & insured — ${business.license}`,
+          `Licensed & insured`,
           `Open 7 days a week, 7 AM – 9 PM`,
         ]}
       />

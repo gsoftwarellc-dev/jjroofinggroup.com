@@ -62,7 +62,7 @@ export default function PrivacyPolicyPage() {
             <p className="mt-3">
               By submitting a request, you consent to be contacted by phone, text, or email
               regarding your inquiry. You may opt out of future communications at any time by
-              replying STOP to a text, or by contacting us at {business.email}.
+              replying STOP to a text, or by contacting us by phone.
             </p>
           </div>
 
@@ -88,10 +88,6 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-2xl text-ink-900">Contact Us</h2>
             <p className="mt-3">
               Questions about this policy? Contact us at{" "}
-              <a href={`mailto:${business.email}`} className="font-semibold text-brand-600 hover:underline">
-                {business.email}
-              </a>{" "}
-              or{" "}
               <a href={`tel:${business.phoneHref}`} className="font-semibold text-brand-600 hover:underline">
                 {business.phone}
               </a>
