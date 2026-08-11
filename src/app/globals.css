@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand: Bright yellow/gold taken directly from the JJ Roofing logo */
+  --color-brand-50: #fefce8;
+  --color-brand-100: #fef9c3;
+  --color-brand-200: #fef08a;
+  --color-brand-300: #fde047;
+  --color-brand-400: #facc15;
+  --color-brand-500: #fcd50c;
+  --color-brand-600: #ca8a04;
+  --color-brand-700: #a16207;
+  --color-brand-800: #854d0e;
+  --color-brand-900: #713f12;
+
+  /* Sky blue taken from the company logo's background field. */
+  --color-sky-brand: #38b5ff;
+  --color-sky-brand-dark: #1f9ae0;
+
+  /* Ink: Deep teal/slate taken directly from the JJ Roofing logo text/dark elements */
+  --color-ink-50: #f4f7f8;
+  --color-ink-100: #e3ebef;
+  --color-ink-200: #c7d8e0;
+  --color-ink-300: #9ebbc9;
+  --color-ink-400: #6f97ab;
+  --color-ink-500: #4f798e;
+  --color-ink-600: #406275;
+  --color-ink-700: #354f5f;
+  --color-ink-800: #2e4350;
+  --color-ink-900: #26404d;
+  --color-ink-950: #162832;
+
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-display), Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white text-ink-700 antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold tracking-tight text-ink-900;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Visible focus ring for keyboard users on every interactive element. */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
